@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxTrace - Trace Page Information</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="asset/LuxTrace burgundy.png" type="image/svg+xml">
+    <!-- Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar Start -->
+<header class="py-2 bg-white absolute top-0 left-0 w-full flex items-center z-50">
+    <div class="container">
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <a href="#home">
+                    <img src="asset/LuxTrace.png" alt="" class="h-14">
+                </a>
+            </div>
+            <div class="flex items-center px-4">
+                <button id="hamburger" name="hamburger" type="button"
+                class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                </button>
+
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <ul class="block lg:flex">
+                        <li class="group">
+                            <a href="index.html" class="text-base text-gray-500 py-2 mx-8  flex group-hover:text-burgundy">Home</a>
+                        </li>
+                        <li class="group">
+                            <a href="verification.html" class="text-base text-gray-500 py-2 mx-8 flex group-hover:text-burgundy">Product Verification</a>
+                        </li>
+                        <li class="group">
+                            <a href="contact.html" class="text-base text-gray-500 py-2 mx-8 flex group-hover:text-burgundy">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navbar End -->
+
+<!-- Hero Section Start -->
+<section class="hero-section py-36 bg-gray-100">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap justify-center">
+            <div class="w-full lg:w-1/3 px-4 mb-4 lg:mb-0">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="asset/Atlas Top Sneaker White.jpg" alt="Product Image" class="w-full rounded-lg shadow-lg">
+                    <div class="mt-2">
+                        <img src="asset/qr-code.png" alt="QR Code" class="inline-block w-full p-8">
+                        <p class="mt-2 text-lg text-gray-500">ID: LXP123456<br>Created: 17 May 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-2/3 px-4">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold mb-4">Traceability Information</h2>
+                    <div class="mb-4">
+                        <label for="namaProduct" class="block text-gray-700">Product Name</label>
+                        <p id="namaProduct" class="w-full px-3 py-2 border rounded bg-gray-100">Atlas Eceng Hi Top Sneaker White</p>
+                    </div>
+                    <div class="mb-4">
+                        <label for="deskripsiProduk" class="block text-gray-700">Product Description</label>
+                        <p id="deskripsiProduk" class="w-full px-3 py-2 border rounded bg-gray-100">ATLAS is sustainably designed using kenaf fibers and ramie. Features with an antimicrobial additive to prevent bacteria from causing odor and offered in sponge cushioned support to lock your feet in place.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label for="material" class="block text-gray-700">Materials</label>
+                        <ul id="material" class="list-disc pl-8 bg-gray-100 py-2 px-4 border rounded">
+                            <li>Upper: Kenaf Fibers and Ramie (Red Pull Tap)</li>
+                            <li>Insole: Latex</li>
+                            <li>Outsole: Natural Raw Rubber (Crepe Sole)</li>
+                            <li>Shoe Laces: Recycled Polyester</li>
+                            <li>Packaging: Carton (the double box)</li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <label for="craftsman" class="block text-gray-700">Craftsman</label>
+                        <p id="craftsman" class="w-full px-3 py-2 border rounded bg-gray-100">Regi Muhammar</p>
+                    </div>
+                    <div class="mb-4">
+                        <label for="supplier" class="block text-gray-700">Supplier</label>     
+                        <p id="supplier" class="w-full px-3 py-2 border rounded bg-gray-100">PT. Kenaf Indonesia</p>
+                    </div>
+                    <div class="mb-4">
+                        <label for="deskripsiSupplier" class="block text-gray-700">Supplier Information</label>
+                        <p id="deskripsiSupplier" class="w-full px-3 py-2 border rounded bg-gray-100">Pemasok utama serat kenaf.</p>
+                    </div>
+                    <div class="mb-4">
+                        <label for="supplierAlamat" class="block text-gray-700">Supplier Location and Contact</label>
+                        <ul id="material" class="list-disc pl-8 bg-gray-100 py-2 px-4 border rounded">
+                            <li>Alamat: Jl. Kenaf Raya No. 10, Bandung</li>
+                            <li>Contact: +62 22 1234567</li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <label for="toko" class="block text-gray-700">Store</label>
+                        <p id="toko" class="w-full px-3 py-2 border rounded bg-gray-100">Jakarta-Kemang-12730</p>
+                    </div>
+                    <div class="mb-4">
+                        <label for="alamatToko" class="block text-gray-700">Store Location and Contact</label>
+                        <p id="alamatToko" class="w-full px-3 py-2 border rounded bg-gray-100">Jl. Pemuda No. 33 B, Jakarta Timur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- Footer Start -->
+
+<footer class="bg-fuchsia-950 pt-12 pb-2">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="flex justify-between">
+                <div class="px-2">
+                    <a href="#home">
+                        <img src="asset/Logo LuxTrace v2.png" alt="" class="max-w-32">
+                    </a>
+                    <h2 class="font-bold text-2xl text-white mb-5">LuxTrace</h2>
+                </div>
+                <div class="w-full px-4 mb-12 text-slate-300 font-light md:w-1/3">
+                    <p class="pt-4">LuxTrace is a traceability platform <br>
+                        that is dedicated to showcasing <br>
+                        Indonesia’s shoe craftsmanship <br>
+                        to the world while making positive <br>
+                        impacts on society and the <br>
+                        environment.
+                        
+                        #CraftedTheJourney</p>
+                </div>
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h3 class="pt-4 font-bold text-xl mb-2 text-white">Contact Us</h3>
+                    <p class="mb-4">amatibangkit@gmail.com</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Location</h3>
+                    <p>Jl. Pemuda No. 33 B, Desa/Kelurahan Jati, Kec. Pulogadung, Jakarta Timur, 13220</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="pt-4 font-semibold text-xl text-white mb-2">Menu</h3>
+                    <ul class="text-slate-300 lg:flex lg:justify-between">
+                        <li>
+                            <a href="index.html" class="inline-block text-base hover:text-burgundy">Home</a>
+                        </li>
+                        <li>
+                            <a href="verification.html" class="inline-block text-base hover:text-burgundy">Product Verification</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="inline-block text-base hover:text-burgundy">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="w-full pt-2 border-t border-gray-300">
+            <p class="text-gray-500 font-medium text-center text-xs">©Created by C241-TP01 Amati Indonesia - Bangkit Academy 2024 Batch 1</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer End -->
+
+</body>
+</html>
